@@ -10,8 +10,8 @@ export default function FinishScreen({ points, maxPossiblePoints }) {
 
   return (
     <p className="result">
-      {emoji} You scored <strong>{points}</strong>out of {maxPossiblePoints} (
-      {Math.ceil(percentage)})
+      {emoji} You scored <strong>{points}</strong> out of {maxPossiblePoints} (
+      {Math.ceil(percentage)}%)
     </p>
   );
 }

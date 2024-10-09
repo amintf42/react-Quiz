@@ -52,6 +52,7 @@ export default function App() {
   );
 
   const numQuestions = questions.length;
+
   const maxPossiblePoints = questions.reduce(
     (prev, cur) => prev + cur.points,
     0
@@ -93,7 +94,12 @@ export default function App() {
               index={index}
               numQuestions={numQuestions}
             /> */}
-            <NextButton dispatch={dispatch} answer={answer} />
+            <NextButton
+              dispatch={dispatch}
+              answer={answer}
+              index={index}
+              numQuestions={numQuestions}
+            />
           </>
         )}
         {status === "finished" && (
